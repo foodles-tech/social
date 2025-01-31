@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2025 Foodles.
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+<odoo>
+    <record id="account_move_send_form" model="ir.ui.view">
+        <field name="name">account move send show_mail_contact_types</field>
+        <field name="model">account.move.send</field>
+        <field name="inherit_id" ref="account.account_move_send_form" />
+        <field name="arch" type="xml">
+            <field name="mail_partner_ids" position="attributes">
+                <attribute name="context" operation="update">{
+                    "show_mail_contact_types":1
+                  }
+                </attribute>
+            </field>
+        </field>
+    </record>
+</odoo>
