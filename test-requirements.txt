@@ -1,1 +1,2 @@
 odoo-test-helper
+odoo-addon-mail_attach_existing_attachment_account @ git+https://github.com/OCA/social.git@refs/pull/1547/head#subdirectory=mail_attach_existing_attachment_account
